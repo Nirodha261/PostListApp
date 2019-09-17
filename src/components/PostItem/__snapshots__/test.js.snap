@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostItem Component PostItem component renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#ecf0f1",
+        "flex": 1,
+        "padding": 24,
+        "paddingTop": 10,
+      },
+      Object {
+        "alignItems": "center",
+        "justifyContent": "space-around",
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "white",
+        "borderRadius": 8,
+        "elevation": 5,
+        "opacity": 1,
+        "padding": 24,
+        "shadowColor": "black",
+        "shadowOffset": Object {
+          "height": 10,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 4,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      test user name
+    </Text>
+    <Text
+      style={
+        Object {
+          "fontSize": 15,
+        }
+      }
+    >
+      test title
+    </Text>
+  </View>
+</View>
+`;
