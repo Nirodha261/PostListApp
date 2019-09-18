@@ -29,7 +29,7 @@ class Posts extends Component {
   constructor(props) {
     super(props);
     this.renderPosts = this.renderPosts.bind(this);
-    this.renderPost = this.renderPost.bind(this);
+    this.onRefresh = this.onRefresh.bind(this);
   }
 
   componentWillMount() {
@@ -45,7 +45,7 @@ class Posts extends Component {
     }
   }
 
-  renderPosts = () => {
+  renderPosts() {
     const { refreshing } = this.state;
     return (
       <ListView
@@ -60,18 +60,18 @@ class Posts extends Component {
     )
   }
 
-  onRefresh = () => {
+  onRefresh() {
     this.setState({ refreshing: false })
     this.props.actions.postActions.getPostList();
   }
 
 
-  postItemPress = item => {
+  postItemPress(item) {
     this.props.navigation.navigate(SCREENS.postDetail,
       { title: item.title, body: item.body });
   }
 
-  renderPost = item => {
+  renderPost(item) {
     return (
       <PostItem
         title={item.title}
